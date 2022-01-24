@@ -19,7 +19,7 @@ int main() {
 	for(int i=0;i<q;i++){
 	    cin>>p[i];
 	}
-	auto arr=reverse(p,q);
+	int* arr=reverse(p,q);
 	for(int a=0;a<q;a++)
 	    cout<<arr[a]<<" ";
 	return 0;
