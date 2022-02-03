@@ -91,25 +91,25 @@ class HashChain
 		while(true) // interact with user
 		{
 			System.out.print("Enter choice :  ");
-			System.out.print("show, insert, delete, or find: ");
+			System.out.print("1: show\n2: insert\n3: delete\n4: or find: ");
 			int choice = getInt();
 			switch(choice)
 			{
-			case 's':
+			case 1:
 				theHashTable.displayTable();
 				break;
-			case 'i':
+			case 2:
 				System.out.print("Enter key value to insert: ");
 				aKey = getInt();
 				aDataItem = new Link(aKey);
 				theHashTable.insert(aDataItem);
 				break;
-			case 'd':
+			case 3:
 				System.out.print("Enter key value to delete: ");
 				aKey = getInt();
 				theHashTable.delete(aKey);
 				break;
-			case 'f':
+			case 4:
 				System.out.print("Enter key value to find: ");
 				aKey = getInt();
 				aDataItem = theHashTable.find(aKey);
